@@ -1,13 +1,16 @@
 .shif__intro {
     position: relative;
     color: $c-white;
-    background-color: $c-black;
+    background-color: $c-header;
 }
 
 .shif__header {
     position: relative;
     height: 0;
     padding-top: 60%;
+    background-image: url('@@assetPath@@/assets/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .shif__headline {
@@ -20,7 +23,7 @@
 
     @include mq(desktop) {
         font-size: 48px;
-        line-height: 58px;
+        line-height: 52px;
     }
 }
 
@@ -30,7 +33,7 @@
     padding: 2px 0;
 
     @include mq(desktop) {
-        padding: 2px 0 6px;
+        padding: 2px 0 9px;
     }
 }
 
@@ -49,4 +52,19 @@
 .shif__standfirst {
     position: absolute;
     bottom: 10px;
+    font-family: 'Guardian Egyptian Web';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: $c-white;
+
+    @include mq(desktop) {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
+
+.shif__byline {
+    display: block;
+    color: $c-blue;
 }

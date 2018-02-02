@@ -1,6 +1,6 @@
 .content__main,
 .prose {
-    p, h1, h2, .element-image {
+    p, h1, h2, h3, .element-image {
         max-width: 620px;
 
         @include mq(leftCol) {
