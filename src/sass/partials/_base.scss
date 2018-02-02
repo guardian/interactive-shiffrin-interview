@@ -54,6 +54,25 @@ figure.element-atom {
     }
 }
 
+// adds rule to page
+.gs-container:before {
+    @include mq(leftCol) {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 170px;
+        height: 100%;
+        width: 0.0625rem;
+        background: $c-grey;
+        z-index: 20;
+    }
+
+    @include mq(wide) {
+        left: 250px;
+    }
+}
+
 // stops the super wide header from causing scroll
 .content__main {
     overflow: hidden;

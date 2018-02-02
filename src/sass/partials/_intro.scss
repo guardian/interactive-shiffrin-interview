@@ -2,6 +2,7 @@
     position: relative;
     color: $c-white;
     background-color: $c-header;
+    margin-bottom: 6px;
 }
 
 .shif__header {
@@ -27,8 +28,7 @@
     }
 }
 
-.shif__headline-quote,
-.shif__headline-title {
+.shif__line {
     display: table;
     padding: 2px 0;
 
@@ -37,26 +37,45 @@
     }
 }
 
-.shif__headline-quote {
+.shif__line--quote {
     color: $c-white;
     background: linear-gradient($c-blue, $c-blue) no-repeat;
     box-shadow: 4px 0 0 $c-blue, -4px 0 0 $c-blue;
 }
 
-.shif__headline-title {
+.shif__line--title {
     color: $c-black;
     background: linear-gradient($c-yellow, $c-yellow) no-repeat;
     box-shadow: 4px 0 0 $c-yellow, -4px 0 0 $c-yellow;
 }
 
+.shif__line--1 {
+    @include mq(desktop) {
+        margin-left: 100px;
+    }
+}
+
+.shif__line--3 {
+    @include mq(desktop) {
+        margin-left: 60px;
+    }
+}
+
+.shif__line--4 {
+    @include mq(desktop) {
+        margin-left: 100px;
+    }
+}
+
 .shif__standfirst {
     position: absolute;
-    bottom: 10px;
+    bottom: 2px;
     font-family: 'Guardian Egyptian Web';
     font-weight: 900;
     font-size: 16px;
     line-height: 19px;
     color: $c-white;
+    max-width: 440px !important;
 
     @include mq(desktop) {
         font-size: 22px;
@@ -66,5 +85,17 @@
 
 .shif__byline {
     display: block;
-    color: $c-blue;
+    color: $c-yellow;
+}
+
+.shif__caption {
+    position: absolute;
+    left: -35px;
+    bottom: -30px;
+    font-family: 'Guardian Text Sans Web';
+    font-size: 16px;
+    line-height: 1;
+    color: $c-white;
+    transform-origin: top left;
+    transform: rotate(-90deg);
 }
