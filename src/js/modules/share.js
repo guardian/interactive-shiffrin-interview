@@ -12,7 +12,6 @@ module.exports =  {
         $(parent + ' .cia-share__button--twitter a').attr('href', this.getTwitterLink());
         $(parent + ' .cia-share__button--facebook a').attr('href', this.getFacebookLink());
         $(parent + ' .cia-share__button--email a').attr('href', this.getEmailLink());
-        console.log(this.getTwitterLink());
     },
 
     getTwitterLink: function() {
