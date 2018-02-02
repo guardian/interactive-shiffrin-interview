@@ -30,8 +30,23 @@ figure.element-atom {
     }
 
     @include mq(tablet) {
-        margin-left: -50vw;
-        margin-right: -50vw;
+        margin-left: calc((100vw - 710px) / -2);
+        margin-right: calc((100vw - 710px) / -2)
+    }
+
+    @include mq(desktop) {
+        margin-left: calc((100vw - 950px) / -2);
+        margin-right: calc((100vw - 950px) / -2)
+    }
+
+    @include mq(leftCol) {
+        margin-left: calc((100vw - 1110px) / -2);
+        margin-right: calc((100vw - 1110px) / -2)
+    }
+
+    @include mq(wide) {
+        margin-left: calc((100vw - 1270px) / -2);
+        margin-right: calc((100vw - 1270px) / -2)
     }
 
     .ios, .android {
