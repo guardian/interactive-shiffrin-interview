@@ -28,6 +28,9 @@
     }
 
     .element--supporting {
+        position: relative;
+        z-index: 20;
+        background-color: transparent !important;
         margin-bottom: 12px !important;
         width: 140px !important;
         float: left;
@@ -43,22 +46,12 @@
         }
 
         @include mq(leftCol) {
-            margin-left: 80px !important;
+            width: 300px !important;
+            margin-left: 0px !important;
         }
 
         @include mq(wide) {
-            margin-left: 160px !important;
-        }
-    }
-
-    .element--supporting,
-    .element-image[data-media-id="dd605e951c9fdc109502bf619bc83a103c00d873"],
-    .element-image[data-media-id="814cee454c8cd74f48c84a37359e12f3f167ec2a"],
-    .element-image[data-media-id="8d26df9cb7bff41aa4296cd124848da6982f06fe"] {
-        position: relative;
-
-        figcaption {
-            padding: 0 !important;
+            margin-left: 20px !important;
         }
 
         .element-image__credit {
