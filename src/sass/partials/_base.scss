@@ -1,4 +1,4 @@
-body, html, .article__body, .tonal--tone-feature {
+.content, .article__body, .tonal--tone-feature {
     background-color: $c-background !important;
 }
 
@@ -60,7 +60,7 @@ figure.element-atom {
 }
 
 // adds rule to page
-.gs-container:before {
+.content .gs-container:before {
     @include mq(leftCol) {
         content: '';
         position: absolute;
