@@ -1,17 +1,17 @@
 var $ = require('../vendor/jquery.js');
 
 var pageUrl = window.location.href.split('#')[0],
-    title = 'Inside the CIA\'s black site torture room';
+    title = '‘I don\'t have to peak to win’: The unstoppable Mikaela Shiffrin wants it all';
 
 module.exports =  {
     init: function() {
-        this.setLinks('.cia-share');
+        this.setLinks('.shif-share');
     },
 
     setLinks: function(parent) {
-        $(parent + ' .cia-share__button--twitter a').attr('href', this.getTwitterLink());
-        $(parent + ' .cia-share__button--facebook a').attr('href', this.getFacebookLink());
-        $(parent + ' .cia-share__button--email a').attr('href', this.getEmailLink());
+        $(parent + ' .shif-share__button--twitter a').attr('href', this.getTwitterLink());
+        $(parent + ' .shif-share__button--facebook a').attr('href', this.getFacebookLink());
+        $(parent + ' .shif-share__button--email a').attr('href', this.getEmailLink());
     },
 
     getTwitterLink: function() {
