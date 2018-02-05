@@ -2,7 +2,7 @@
     position: relative;
     color: $c-white;
     background-color: $c-header;
-    margin-bottom: 36px;
+    margin-bottom: 42px;
 
     @include mq(desktop) {
         margin-bottom: 6px;
