@@ -166,14 +166,14 @@
         display: inline-block;
         text-transform: uppercase;
         float: left;
-        color: $c-blue;
+        color: $c-dark-blue;
         margin-right: 6px;
         height: 4.3em;
     }
 
     .shif__drop-inner {
-        font-size: 5.4em;
-        line-height: 0.85;
+        font-size: 5.2em;
+        line-height: 0.79;
     }
 
     p {
@@ -181,20 +181,15 @@
     }
 
     p > a {
-        background-color: $c-white !important;
-        background-image: none !important;
-        padding: 4px;
-        color: $c-black !important;
-        border-bottom: 0 !important;
+        color: $c-dark-blue !important;
         box-shadow: none !important;
         text-shadow: none !important;
+        border-bottom: 1px solid $c-blue !important;
 
         &:hover {
-            color: $c-white !important;
-            background-color: $c-black !important;
             text-decoration: none !important;
-            border-bottom: 0 !important;
             box-shadow: none !important;
+            color: $c-blue !important;
         }
     }
 
