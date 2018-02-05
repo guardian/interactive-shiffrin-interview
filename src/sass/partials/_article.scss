@@ -158,7 +158,7 @@
     }
 
     p {
-        margin-bottom: 1.5rem;
+        margin-bottom: 18px;
     }
 
     p > a {
@@ -166,6 +166,7 @@
         box-shadow: none !important;
         text-shadow: none !important;
         border-bottom: 1px solid $c-blue !important;
+        background: none !important;
 
         &:hover {
             text-decoration: none !important;
