@@ -55,6 +55,7 @@
     }
 
     .element-image {
+        position: relative !important;
         margin-bottom: 36px !important;
 
         @include mq(leftCol) {
@@ -73,10 +74,10 @@
             top: 7px;
             bottom: -22px;
             padding-top: 0;
+            padding-left: 10px !important;
 
             @include mq(leftCol) {
                 padding-right: 120px !important;
-                padding-left: 10px !important;
             }
         }
 
