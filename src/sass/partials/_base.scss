@@ -64,7 +64,7 @@ figure.element-atom {
         left: 170px;
         height: 100%;
         width: 0.0625rem;
-        background: $c-grey;
+        background: $c-blue;
         z-index: 20;
     }
 
@@ -151,5 +151,5 @@ figure.element-atom {
 
 .l-side-margins:after, .l-side-margins:before {
     z-index: 30;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: transparent;
 }
