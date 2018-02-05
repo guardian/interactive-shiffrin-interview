@@ -55,6 +55,8 @@
     }
 
     .element-image {
+        margin-bottom: 36px !important;
+
         @include mq(leftCol) {
             position: relative;
             z-index: 25;
@@ -67,7 +69,10 @@
         }
 
         figcaption {
-            margin-top: -2.35em;
+            position: absolute;
+            top: 7px;
+            bottom: -22px;
+            padding-top: 0;
 
             @include mq(leftCol) {
                 padding-right: 120px !important;
@@ -89,16 +94,14 @@
         }
 
         .element-image__credit {
-            font-family: 'Guardian Egyptian Web', Georgia, serif;
-            font-weight: 900;
-            font-size: 20px;
-            line-height: 1.25;
-            color: $c-yellow;
-            margin-top: 0px;
-            margin-bottom: 6px;
-            background: linear-gradient($c-black, $c-black) no-repeat;
-            box-shadow: 4px 0 0 $c-black, -4px 0 0 $c-black;
-            display: table;
+            color: $c-dark-blue;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            @include mq(leftCol) {
+                left: 10px;
+            }
         }
     }
 
