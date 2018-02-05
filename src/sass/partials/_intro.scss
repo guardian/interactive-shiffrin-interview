@@ -18,10 +18,31 @@
 .shif__header {
     position: relative;
     height: 0;
-    padding-top: 60%;
+    padding-top: 130%;
     background-image: url('@@assetPath@@/assets/images/bg.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: right 35% center;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include mq(mobileLandscape) {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100%;
+    }
+
+    @include mq(tablet) {
+        margin: 0;
+        padding: 0;
+        padding-top: 60%;
+        background-size: contain;
+        background-position: right center;
+    }
 }
 
 .shif__headline {
@@ -29,12 +50,26 @@
     top: 20px;
     font-family: 'Guardian Egyptian Web';
     font-weight: 900; 
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include mq(mobileLandscape) {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    @include mq(phablet) {
+        font-size: 32px;
+        line-height: 36px;
+    }
 
     @include mq(desktop) {
         font-size: 48px;
         line-height: 52px;
+    }
+
+    @include mq(leftCol) {
+        margin-top: 20px;
     }
 }
 
@@ -50,13 +85,21 @@
 .shif__line--quote {
     color: $c-white;
     background: linear-gradient($c-blue, $c-blue) no-repeat;
-    box-shadow: 10px 0 0 $c-blue, -10px 0 0 $c-blue;
+    box-shadow: 4px 0 0 $c-blue, -4px 0 0 $c-blue;
+
+    @include mq(desktop) {
+        box-shadow: 10px 0 0 $c-blue, -10px 0 0 $c-blue;
+    }
 }
 
 .shif__line--title {
     color: $c-black;
     background: linear-gradient($c-yellow, $c-yellow) no-repeat;
-    box-shadow: 10px 0 0 $c-yellow, -10px 0 0 $c-yellow;
+    box-shadow: 4px 0 0 $c-yellow, -4px 0 0 $c-yellow;
+
+    @include mq(desktop) {
+        box-shadow: 10px 0 0 $c-yellow, -10px 0 0 $c-yellow;
+    }
 }
 
 .shif__line--1 {

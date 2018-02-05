@@ -29,6 +29,11 @@ figure.element-atom {
         margin-right: -20px;
     }
 
+    @include mq(phablet) {
+        margin-left: calc((100vw - 630px) / -2);
+        margin-right: calc((100vw - 630px) / -2);
+    }
+
     @include mq(tablet) {
         margin-left: calc((100vw - 710px) / -2);
         margin-right: calc((100vw - 710px) / -2)
