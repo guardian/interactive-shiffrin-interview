@@ -41,10 +41,15 @@
         display: inline;
     }
 
-    .table {
+    .table, p {
         font-family: 'Guardian Text Sans Web';
         font-size: 14px;
         line-height: 18px;
+        margin: 0;
+    }
+
+    p {
+        opacity: .7;
     }
 
     hr {
@@ -60,22 +65,22 @@
     }
 
     .table__date {
-        width: 25%;
+        width: 30%;
         color: #0184c7;
     }
 
     .table__time {
-        width: 35%;
+        width: 20%;
         padding-right: 24px;
         box-sizing: border-box;
     }
 
     .table__event {
-        width: 40%;
+        width: 50%;
         position: relative;
     }
 
-    .table__event.is-for-gold:before {
+    .table__event:before {
         content: '';
         width: .85em;
         height: .85em;
@@ -88,37 +93,50 @@
 </style>
 
 <div class='title__wrapper'>
-    <h2 class='title'>Shiffrin&rsquo;s schedule at the Winter Olympics in Pyeongchang</h2>
+    <h2 class='title'>Shiffrin&rsquo;s probable schedule at the Winter Olympics in Pyeongchang</h2>
 </div>
 <div class="table">
     <hr />
 
     <div class='table__entry'>
-        <div class='table__date'>Thursday 8</div>
-        <div class='table__time'>6:30 GMT</div>
-        <div class='table__event'>Super Combined Downhill</div>
-    </div>
-
-    <div class='table__entry'>
-        <div class='table__date'></div>
-        <div class='table__time'>6:30 GMT</div>
-        <div class='table__event'>Super Combined Downhill</div>
+        <div class='table__date'>11 February</div>
+        <div class='table__time'>8.15pm</div>
+        <div class='table__event'>Women's giant slalom</div>
     </div>
 
     <hr />
 
     <div class='table__entry'>
-        <div class='table__date'>Sunday 11</div>
-        <div class='table__time'>10:30 GMT</div>
-        <div class='table__event is-for-gold'>Slalom</div>
+        <div class='table__date'>13 February</div>
+        <div class='table__time'>8.15pm</div>
+        <div class='table__event'>Women's slalom</div>
     </div>
 
     <hr />
 
     <div class='table__entry'>
-        <div class='table__date'>Thursday 8</div>
-        <div class='table__time'>6:30 GMT</div>
-        <div class='table__event'>Super Combined Downhill</div>
+        <div class='table__date'>16 February</div>
+        <div class='table__time'>9pm</div>
+        <div class='table__event'>Women's super-G</div>
     </div>
+
+    <hr />
+
+    <div class='table__entry'>
+        <div class='table__date'>20 February</div>
+        <div class='table__time'>9pm</div>
+        <div class='table__event'>Women's downhill</div>
+    </div>
+
+    <hr />
+
+    <div class='table__entry'>
+        <div class='table__date'>22 February</div>
+        <div class='table__time'>9pm</div>
+        <div class='table__event'>Women's alpine combined</div>
+    </div>
+    
+    <hr />
 </div>
+<p>All times in Eastern</p>
 </body></html>
